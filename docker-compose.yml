@@ -1,0 +1,13 @@
+version: "3.5"
+
+services:
+  translate:
+    build:
+      context: .
+    environment:
+      PIPENV_NOSPIN: 1
+      INPUT_FILENAME: /opt/resources/stadiums.csv
+      OUTPUT_FILENAME: /opt/resources/stadiums.geojson
+    volumes:
+      - ./resources:/opt/resources
+

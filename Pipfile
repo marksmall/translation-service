@@ -1,0 +1,24 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+start = "pipenv run python scripts/translate.py"
+
+[packages]
+geopandas = "*"
+numpy = "*"
+pandas = "*"
+
+[dev-packages]
+pylint = "*"
+yapf = "*"
+pytest = "*"
+pytest-watch = "*"
+pytest-sugar = "*"
+pytest-html = "*"
+factory-boy = "*"
+
+[requires]
+python_version = "3.8"
