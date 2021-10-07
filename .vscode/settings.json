@@ -1,0 +1,43 @@
+{
+  "editor.formatOnPaste": false,
+  "editor.formatOnSave": true,
+  // "[javascript]": {
+  //   "editor.defaultFormatter": "esbenp.prettier-vscode"
+  // },
+  // "eslint.validate": ["javascript", "javascriptreact"],
+  // "eslint.workingDirectories": [
+  //   {
+  //     "mode": "auto"
+  //   }
+  // ],
+  // "eslint.alwaysShowStatus": true,
+  // "eslint.format.enable": true,
+  // "editor.codeActionsOnSave": {
+  //   "source.fixAll.eslint": true
+  // },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/*.pyc": true,
+    "**/__pycache__": true
+  },
+  "python.autoComplete.extraPaths": ["./"],
+  "python.formatting.provider": "yapf",
+  "python.formatting.yapfArgs": [
+    "--style={based_on_style: facebook, coalesce_brackets: 1, dedent_closing_brackets: 1, indent_width: 4, split_all_top_level_comma_separated_values: 1, split_before_dict_set_generator: 1}"
+  ],
+  "python.formatting.yapfPath": "./.venv/bin/yapf",
+  "python.linting.enabled": true,
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintEnabled": true,
+  "python.linting.pylintPath": "./.venv/bin/pylint",
+  "python.linting.pylintUseMinimalCheckers": false,
+  "python.pythonPath": "./.venv/bin/python",
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "python.analysis.extraPaths": ["./"]
+}
